@@ -2,6 +2,7 @@ import { MemoryRouter as Router, Routes, Route } from 'react-router-dom';
 import icon from '../../assets/icon.svg';
 import './App.css';
 
+
 function Hello() {
   return (
     <div>
@@ -38,6 +39,39 @@ function Hello() {
     </div>
   );
 }
+
+// const scene = new THREE.Scene();
+// const camera = new THREE.PerspectiveCamera(75, 1, 0.1, 1000);
+
+// const sceneContext = {
+//   scene: scene,
+//   camera: camera,
+//   console: console,
+// };
+
+// function runUserCode(userCode, sceneContext) {
+//   const sandbox = { 
+//     scene: sceneContext.scene, 
+//     camera: sceneContext.camera, 
+//     console: console 
+//   };
+
+//   vm.createContext(sandbox);
+
+//   try {
+//     vm.runInContext(userCode, sandbox, { timeout: 1000 });
+//   } catch (error) {
+//     console.error('Error in user code:', error.message);
+//   }
+// }
+
+// runUserCode(
+//   `
+//   scene.background = new THREE.Color(0xff0000);
+//   console.log('Background color changed to red');
+//   `,
+//   { scene, camera }
+// );
 
 export default function App() {
   return (
